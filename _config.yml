@@ -9,7 +9,7 @@
 
 p : &people
     current :
-        - name : Testing Kane
+        - name : Saben Kane
           email : sabenkane@yahoo.com
           position :  Graduate Student
           interest : vertebrate limb development
