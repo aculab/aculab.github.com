@@ -1,0 +1,41 @@
+#
+#  Cleaned up config file
+#  @author Diego Calderon
+#
+
+# Default format
+permalink: /:categories/:year/:month/:day/:title 
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+auto: true
+pygments: true
+
+# Some info stuff
+
+title : ACU's Lab
+tagline:
+author :
+  name : Alejandro
+  email : calalea@csufresno.edu
+  github : dcalderon
+  twitter : soicanswim
+  feedburner : 
+
+# Just used where full domain names are needed like sitemap.txt
+production_url : http://zimmer.csufresno.edu/~calalea/
+
+# All Jekyll-Bootstrap specific configurations are namespaced into this hash
+JB :
+  version : 0.2.13
+  BASE_PATH : false
+  ASSET_PATH : false
+  archive_path: /archive
+  categories_path : /categories
+  tags_path : /tags
+  comments :
+    provider :
+    disqus :
+      short_name : 
+  analytics :
+    provider : google 
+    google : 
+        tracking_id : 'UA-29312382-1'
