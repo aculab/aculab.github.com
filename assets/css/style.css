@@ -313,6 +313,29 @@ section {
   padding-bottom:50px;
 }
 
+/***********************************************************************************************/
+/* Go top Button */
+/***********************************************************************************************/
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, .8);
+	font-size: 14px;
+	padding: 1.5em;
+	display: none;
+}
+
+#topButton {
+    color: white;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 /* Footer */
 

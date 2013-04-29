@@ -3,6 +3,31 @@
 #  @author Diego Calderon
 #
 
+#
+#   PEOPLE OF THE LAB!
+#
+
+p : &people
+    current :
+        - name : Saben Kane
+          email : sabenkane@yahoo.com
+          position :  Graduate Student
+          interest : vertebrate limb development
+          pic : /Test/Saben.jpg
+        
+        - name : Natalie Powers
+          email : Pfox83@aol.com
+          position :  Graduate Student
+          interest :  Identification of WRKY-like sequences in Podophyllum peltatum
+          pic : /Test/Natalie.jpg
+          
+    alumni :
+        
+            
+    
+
+
+
 # Default format
 permalink: /:categories/:year/:month/:day/:title 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
@@ -10,15 +35,11 @@ auto: true
 pygments: true
 
 # Some info stuff
-
 title : ACU's Lab
 tagline:
 author :
   name : Alejandro
   email : calalea@csufresno.edu
-  github : dcalderon
-  twitter : soicanswim
-  feedburner : 
 
 # Just used where full domain names are needed like sitemap.txt
 production_url : http://zimmer.csufresno.edu/~calalea/
@@ -39,3 +60,21 @@ JB :
     provider : google 
     google : 
         tracking_id : 'UA-29312382-1'
+        
+        
+# Entire site variables!
+# Customize your welcome message
+welcome : &welcome
+    "My name is Alejandro Calderón-Urrea.  I'm a professor of Developmental Biology at California State University, Fresno. The purpose of this site is to introduce you to the different activities that are going on in my research/teaching program. Feel free to send me an e-mail with comments and suggestions."
+    
+test : *welcome
+
+menu :
+    research :
+    people : *people
+    publications :
+    positions :
+    courses :
+    links :
+    contact :
+

@@ -1,5 +1,7 @@
 # Alejandro's Site
 
+I built this site for Alejandro Calderon-Urrea.
+
 Thanks for checking things out. Here's some more detailed info...
 
 hosted on [github pages](http://dcalderon.github.com/).
@@ -17,12 +19,18 @@ hosted on [github pages](http://dcalderon.github.com/).
 
 ## TO DO
 
-install theme
 Build site/modify
 Fix responsiveness
+Get a custom bootstrap javascript thing for stuff I want...
+Consider simply making one static page that displays all the information?
 change colors
 Add tools to make easy to maintain
 Add basic content
+Create full proof framework for github - possibly set up ultimate config so that you just have to update site variables and everything is set up from there...
+
+## How to
+
+Eventually I'll compile a list of important functions and guide users how to edit the site through the gitHub interface.
 
 ## License
 
