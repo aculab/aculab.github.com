@@ -3,43 +3,162 @@
 #  @author Diego Calderon
 #
 
+# Some basic info stuff
+title : ACU's Lab
+tagline:
+author :
+  name : Alejandro
+  email : calalea@csufresno.edu
+
+#
+#   SITE CUSTOMIZATION SECTIONS!
+#
+
 #
 #   PEOPLE OF THE LAB!
 #
 
 p : &people
     current :
+        - name : Saben Undergrad
+          email : sabenkane@yahoo.com
+          position :  Graduate Student
+          interest : vertebrate limb development
+          pic : /Resources/images/Saben.jpg
+        
+        - name : Natalie Undergrad
+          email : Pfox83@aol.com
+          position :  Graduate Student
+          interest :  Identification of WRKY-like sequences in Podophyllum peltatum
+          pic : /Resources/images/Natalie.jpg
+          
+    alumni :
         - name : Saben Kane
           email : sabenkane@yahoo.com
           position :  Graduate Student
           interest : vertebrate limb development
-          pic : /Test/Saben.jpg
-        
+          pic : /Resources/images/Saben.jpg
+            
         - name : Natalie Powers
           email : Pfox83@aol.com
           position :  Graduate Student
           interest :  Identification of WRKY-like sequences in Podophyllum peltatum
-          pic : /Test/Natalie.jpg
-          
-    alumni :
-        
-            
+          pic : /Resources/images/Natalie.jpg
     
+#
+#   CURRENT RESEARCH !
+#
 
+r : &research
+    - title : Molecular genetics of programmed cell death in plants
+      description : |
+        One of the long range scientific goals of our laboratory is to understand
+        the process of developmentally regulated programed cell death (PCD) in
+        plants by using a combination of genetics, reverse genetics, molecular
+        and cell biological approaches.
+      image : /Resources/images/project1.jpg
+      
+    - title : "A novel biotechnology approach for plant protection against nematodes: the use of programmed cell death"
+      description : |
+         One of the long range scientific goals of our laboratory is to understand
+         the process of developmentally regulated programed cell death (PCD) in
+         plants by using a combination of genetics, reverse genetics, molecular
+         and cell biological approaches.
+      image : /Resources/images/project1.jpg
+       
+    - title : Application of 4D microscopy to study early development in the plant parasitic nematodes
+      description : |
+         One of the long range scientific goals of our laboratory is to understand
+         the process of developmentally regulated programed cell death (PCD) in
+         plants by using a combination of genetics, reverse genetics, molecular
+         and cell biological approaches.
+      image : /Resources/images/project1.jpg
+           
 
+#
+#   FIGURE SOMETHING OUT FOR PUBLICATIONS
+#
 
-# Default format
-permalink: /:categories/:year/:month/:day/:title 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-auto: true
-pygments: true
+           
+#
+#   POSITIONS AVAILABLE !
+#
 
-# Some info stuff
-title : ACU's Lab
-tagline:
-author :
-  name : Alejandro
-  email : calalea@csufresno.edu
+# will this be static? probably but for now it might be nice to organize it here.
+
+pos : &positions
+    - title : Undergrad
+      description: We are looking for a few good people.
+      info : /Resources/applications/genericapplication.pdf
+    - title : Graduate
+      description: We are looking for a few good people.
+      info : /Resources/applications/genericapplication.pdf
+    - title : Postdoctoral
+      description: We are looking for a few good people.
+      info : /Resources/applications/genericapplication.pdf
+    - title : technical
+      description: We are looking for a few good people.
+      info : /Resources/applications/genericapplication.pdf
+
+#
+#   COURSES
+#
+
+c : &courses
+    - title : Developmental Biology (Genetics 172)-spring
+      description : We do developmental biology.
+      syllabus : /Resources/syllabi/syllabus1.pdf
+      pictures :
+          
+    - title : Plant Growth and Development (Botany 137)-fall
+      description : We do plant growth and development.
+      syllabus : /Resources/syllabi/syllabus1.pdf
+      pictures :
+
+#
+#   LINKS
+#
+
+l : &links
+    - name : The American Society of Plant Biologists
+      description : Here we have a society for plant biologists.
+      url : "http://my.aspb.org/?CFID=1413981&CFTOKEN=87127007"
+      
+    - name : Link numero 2
+      description : good blog!
+      url : diegocalderon.info
+          
+#
+#   CONTACT
+#
+
+con : &contact
+    fullName : "Alejandro Calderón-Urrea, M. S., Ph. D"
+    title : Professor of Developmental Biology Department of Biology California State University
+    streetAddress : Fresno 2555 East San Ramon Avenue
+    city : Fresno
+    state : CA
+    office : (559) 278-4080
+    lab : (559) 278-7266
+    fax : (559) 278-3963
+    facebook :
+    twitter : 
+
+###
+###         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+###         ! MOST OF THE STUFF BELOW HERE SHOULDN'T BE TOUCHED !
+###         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+###
+
+# Collecting various portions into a master menu.
+menu :
+    research : *research
+    people : *people
+    publications :
+    positions : *positions
+    courses : *courses
+    links : *links
+    contact : *contact
 
 # Just used where full domain names are needed like sitemap.txt
 production_url : http://zimmer.csufresno.edu/~calalea/
@@ -52,29 +171,13 @@ JB :
   archive_path: /archive
   categories_path : /categories
   tags_path : /tags
-  comments :
-    provider :
-    disqus :
-      short_name : 
   analytics :
     provider : google 
     google : 
         tracking_id : 'UA-29312382-1'
         
-        
-# Entire site variables!
-# Customize your welcome message
-welcome : &welcome
-    "My name is Alejandro Calderón-Urrea.  I'm a professor of Developmental Biology at California State University, Fresno. The purpose of this site is to introduce you to the different activities that are going on in my research/teaching program. Feel free to send me an e-mail with comments and suggestions."
-    
-test : *welcome
-
-menu :
-    research :
-    people : *people
-    publications :
-    positions :
-    courses :
-    links :
-    contact :
-
+# More config details
+permalink: /:categories/:year/:month/:day/:title 
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+auto: true
+pygments: true

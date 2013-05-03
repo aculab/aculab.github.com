@@ -27,6 +27,7 @@ change colors
 Add tools to make easy to maintain
 Add basic content
 Create full proof framework for github - possibly set up ultimate config so that you just have to update site variables and everything is set up from there...
+Add too mojombo
 
 ## How to
 
